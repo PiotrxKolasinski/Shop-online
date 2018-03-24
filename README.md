@@ -11,3 +11,8 @@
   - Hibernate
   - Maven
   
+  # Admin account
+  
+  username: admin
+  password: fun123
+  
