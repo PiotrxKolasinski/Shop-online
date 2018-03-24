@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/default"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500i,600,600i,700,700i,900 "
+          rel="stylesheet ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>User Account</title>
+</head>
+<body>
+<header th:replace="layout/default :: header">
+</header>
+<section th:replace="layout/default :: section">
+
+</section>
+
+<section>
+    <div class="container terms-container">
+
+        <div class="row ">
+            <div class="col-md-12">
+                <div class="title-section">
+                    <h1>Account</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="terms-container-margin">
+                    <div class=" product-section-details">
+                        <div class="account-section">
+                            <h4>Account settings</h4>
+                            <br>
+                            <a th:href="@{/user/general}">
+                                <p>General</p>
+                            </a>
+                            <a th:href="@{/user/yourOrders}">
+                                <p>Your orders</p>
+                            </a>
+                            <a th:href="@{/user/address}">
+                                <p>Address</p>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-9">
+                <div class="terms-container-margin">
+                    <div class=" product-section-details">
+                        <div class="account-section account-section-right">
+                            <h4>Address</h4>
+                            <div class="show-address-section">
+                                <form action="#" th:action="@{/user/updateAddress}" th:object="${customer}"
+                                      method="post">
+
+                                    <span>Firstname: </span> <input type="text" th:field="${customer.address.firstname}"
+                                                                    class="form-control" placeholder="Firstname">
+                                    <p class="error-message" th:if="${#fields.hasErrors('address.firstname')}">
+                                        <th:block th:errors="${customer.address.firstname}">Error</th:block>
+                                    </p>
+                                    <span>Lastname: </span> <input type="text" th:field="${customer.address.lastname}"
+                                                                   class="form-control" placeholder="Lastname">
+                                    <p class="error-message" th:if="${#fields.hasErrors('address.lastname')}">
+                                        <th:block th:errors="${customer.address.lastname}">Error</th:block>
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <span>Street name: </span> <input type="text" th:field="${customer.address.streetName}"
+                                                   class="form-control" placeholder="Street name">
+                                            <p class="error-message" th:if="${#fields.hasErrors('address.streetName')}">
+                                                <th:block th:errors="${customer.address.streetName}">Error</th:block>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <span>Street number: </span> <input type="text" th:field="${customer.address.streetNumber}"
+                                                   class="form-control" placeholder="S. number">
+                                            <p class="error-message" th:if="${#fields.hasErrors('address.streetNumber')}">
+                                                <th:block th:errors="${customer.address.streetNumber}">Error</th:block>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <span>City: </span>  <input type="text" th:field="${customer.address.city}" class="form-control"
+                                                   placeholder="City">
+                                            <p class="error-message" th:if="${#fields.hasErrors('address.city')}">
+                                                <th:block th:errors="${customer.address.city}">Error</th:block>
+                                            </p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <span>Zip code: </span> <input type="text" th:field="${customer.address.zipCode}"
+                                                   class="form-control" placeholder="Zip code">
+                                            <p class="error-message" th:if="${#fields.hasErrors('address.zipCode')}">
+                                                <th:block th:errors="${customer.address.zipCode}">Error</th:block>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <input type="submit" class="btn btn-primary col-md-12" value="Save address" style="margin-top: 40px;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<footer th:replace="layout/default :: footer">
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

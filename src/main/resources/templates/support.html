@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/default">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500i,600,600i,700,700i,900 "
+          rel="stylesheet ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title>Support</title>
+</head>
+<body>
+<header th:replace="layout/default :: header">
+</header>
+<section th:replace="layout/default :: section">
+
+</section>
+
+<section>
+    <div class="container main-section">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-section">
+                    <h1>Support</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row ">
+            <div class="col-md-8 log-section-margin">
+                <div class="form-group log-section support-section">
+                    <form action="#" method="post" th:action="@{/emailSent}" th:object="${supportFormat}">
+                        <div class="set-block ">
+                            <p class="col-md-1">Email:</p>
+                            <input type="text" class="form-control col-md-12" placeholder="Your@Email.com"
+                                   th:field="${supportFormat.email}">
+                        </div>
+                        <span th:if="${#fields.hasErrors('email')}" class="error-message"><br><span
+                                th:errors="${supportFormat.email}">Error</span></span>
+                        <div class="set-block ">
+                            <p class="col-md-1">Subject:</p>
+                                    <input type="text" class="form-control col-md-12" placeholder="Subject"
+                                           th:field="${supportFormat.subject}" th:value="${supportFormat.subject}">
+                        </div>
+                        <span th:if="${#fields.hasErrors('subject')}" class="error-message"><br><span
+                                th:errors="${supportFormat.subject}">Error</span></span>
+                        <div class="set-block ">
+                            <p class="col-md-1">Message:</p>
+                            <textarea class="form-control col-md-12" placeholder="Your Message..." rows="10"
+                                      maxlength="300" th:field="${supportFormat.message}"></textarea>
+                        </div>
+                        <span th:if="${#fields.hasErrors('message')}" class="error-message"><br><span
+                                th:errors="${supportFormat.message}">Error</span></span>
+                        <div class="set-block">
+                            <input type="submit" class="btn btn-primary form-control col-md-12" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<footer th:replace="layout/default :: footer">
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

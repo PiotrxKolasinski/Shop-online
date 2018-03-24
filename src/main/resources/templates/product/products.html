@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="layout/default">
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500i,600,600i,700,700i,900 "
+          rel="stylesheet ">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/mainStyle.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <title th:text="${title}">Product</title>
+</head>
+<body>
+<header th:replace="layout/default :: header">
+</header>
+<section th:replace="layout/default :: section">
+</section>
+
+<section>
+    <div class="container product-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="title-section">
+                    <h1 th:text="${title2}">Product</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="row product-section-margin">
+
+            <div th:each="products, iterator : ${products}" class="col-md-6 ">
+                <div class="form-group product-section ">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="title-product-section">
+                                <h6><b th:text="${products.name}"></b></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img th:src="${products.imagePath}">
+                        </div>
+                        <div class="col-md-6 product-section-right">
+                            <span th:each="i : ${#numbers.sequence( 0, __${shortDescription[iterator.count-1].length}__-1)}">
+                                <p><b><span th:text="${shortDescription[iterator.count-1][i]}"></span></b></p>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 product-section-price">
+                            <b><i th:text="${products.price}"></i> PLN</b>
+                        </div>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            <form action="#" th:action="@{/shop/addProductToCart(productId=${products.id}, quantity=1)}" method="post">
+                                <input type="submit" class="btn btn-primary col-md-12" value="Add to cart">
+                            </form>
+                        </div>
+
+                        <div class="col-md-6">
+                            <form action="#" th:action="@{/details(productId=${products.id})}" method="post">
+                                <input type="submit" class="btn btn-primary col-md-12" value="Details">
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 page-section">
+                <p>Page</p>
+
+                <span th:switch="${'/'+title2}">
+
+                    <span th:case="'/search'">
+                         <span th:each="i : ${numberOfPages}">
+                            <th:block th:switch="${i}">
+                                <th:block th:case="'...'">
+                                    <i th:text="${i}"></i>
+                                </th:block>
+                                <th:block th:case="*">
+                                    <a th:href="@{${url}(page=${i}, searchResult=${searchResult})}" th:text="${i}">1</a>
+                                </th:block>
+                            </th:block>
+                        </span>
+                    </span>
+
+
+                    <span th:case="*">
+                        <span th:each="i : ${numberOfPages}">
+                            <th:block th:switch="${i}">
+                                <th:block th:case="'...'">
+                                    <i th:text="${i}"></i>
+                                </th:block>
+                                <th:block th:case="*">
+                                    <a th:href="@{${url}(page=${i})}" th:text="${i}">1</a>
+                                </th:block>
+                            </th:block>
+                        </span>
+                    </span>
+
+                </span>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer th:replace="layout/default :: footer">
+
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>

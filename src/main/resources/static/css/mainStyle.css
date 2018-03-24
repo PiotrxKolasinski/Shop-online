@@ -1,0 +1,333 @@
+.main-section {
+    background-color: white;
+    border-top: 1px solid #000;
+}
+
+.main-section img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.title-section h1 {
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+
+.title-section h1:after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: #4488FF;
+    margin-left: -30px;
+}
+
+.title-section p {
+    color: #333;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.log-section {
+    margin-top: 100px;
+    border: 1px solid #4488FF;
+    padding: 25px;
+    border-radius: 5px;
+
+}
+
+.log-section-margin {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 75px;
+}
+
+.log-section-reg {
+    border: 1px solid #4488FF;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.set-block {
+    margin-top: 20px;
+}
+
+.contact-section {
+    margin-top: 100px;
+    padding-bottom: 150px;
+}
+
+.contact-section p {
+    color: #333;
+    font-size: 18px;
+    line-height: 45px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.support-section .form-control {
+    resize: none;
+}
+
+.product-container {
+    background-color: white;
+    border-top: 1px solid #000;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 50px;
+}
+
+.product-section,
+.product-section-details {
+    border: 1px solid #4488FF;
+    padding: 25px;
+    border-radius: 5px;
+    margin-bottom: 25px;
+}
+
+.product-section-margin {
+    margin-top: 100px;
+    min-height: 600px;
+}
+
+.title-product-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.title-product-section h6 {
+    font-size: 16px;
+}
+
+.product-section img {
+    width: 100%;
+    height: 200px;
+}
+
+.product-section-details img {
+    width: 100%;
+}
+
+.product-section-right {
+    height: 180px;
+}
+
+.product-section p,
+.product-section-details p {
+    font-size: 10px;
+
+}
+
+.product-section-price {
+    font-size: 16px;
+    text-align: right;
+}
+
+.product-section button,
+.product-section-details button {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.product-section-details-quantity {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.product-section-details-quantity b {
+    padding-top: 25px;
+}
+
+.details-description-section-title {
+    border-top: 1px solid #4488FF;
+    padding-top: 10px;
+}
+
+.details-description-section-title b p {
+    font-size: 18px;
+}
+
+.details-description-section p {
+    font-size: 16px;
+}
+
+.page-section {
+    font-family: Calibri;
+    font-size: 18px;
+    padding-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.terms-container-margin {
+    margin-top: 60px;
+    min-height: 600px;
+}
+
+.terms-container {
+    border-top: 1px solid #000;
+    background-color: white;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 50px;
+    ming-height: 300px;
+}
+
+.terms-container p {
+    font-size: 12px;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+}
+
+.success-message {
+    text-align: center;
+    color: green;
+}
+
+.account-section-right {
+    min-height: 500px;
+}
+
+.account-section h4 {
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+    text-transform: capitalize;
+}
+
+.account-section a {
+    color: #000;
+    text-decoration: none;
+}
+
+.account-section p {
+    font-size: 20px;
+}
+
+.account-section a:hover {
+    color: #4488FF;
+    text-decoration: none;
+}
+
+.findAll-button {
+    width: 100%;
+}
+
+.admin-show-products {
+    margin-top: 30px;
+}
+
+.admin-show-products table {
+    margin-top: 10px;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.admin-show-products table tr {
+    border-bottom: 1px solid #000;
+}
+
+.admin-show-products a {
+    color: #4488FF;
+    text-decoration: none;
+}
+
+.admin-show-products a:hover {
+    color: #000;
+}
+
+#td-name {
+    text-align: left;
+}
+
+.show-one-product input,
+.show-address-section input {
+    margin-bottom: 10px;
+}
+
+.show-one-product span,
+.show-address-section span {
+    font-weight: bold;
+}
+
+.show-one-product textarea {
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.shopCart-table {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.shopCart-table tr {
+    border-bottom: 1px solid #4488FF;
+}
+
+.shopCart-table img {
+    width: 100%;
+}
+
+.shopCart-table input {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shopCart-table a {
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.shopCart-table a:hover {
+    color: #4488FF;
+}
+
+.shopCart-table-products {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.order-title {
+    text-align: center;
+}
+
+.form-control {
+    resize: none;
+}
+
+.total-price {
+    text-align: right;
+}
+
+.account-section h5 {
+    border-top: 1px solid #4488FF;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+.ask-for-product-button {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+
