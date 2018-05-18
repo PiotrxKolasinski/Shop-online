@@ -12,7 +12,7 @@
 
 <body>
 <header id="header-section" th:fragment="header" >
-    <div class="container header-container">
+    <div id="header" class="container header-container">
         <div class="row">
 
             <div class="col-md-4">
@@ -21,7 +21,7 @@
 
             <div class="col-md-6 header-center">
                 <form class="form-inline form-group" action="#" method="post" th:action="@{/search(page=1)}" >
-                    <input type="text" placeholder="Search" class="form-control col-md-8 header-search-text" name="searchResult" required/>
+                    <input id="sr" type="text" placeholder="Search" class="form-control col-md-8 header-search-text" name="searchResult" required/>
                     <input class="btn btn-primary col-md-3 header-button-search" type="submit" value="Search" />
                 </form>
             </div>
@@ -37,7 +37,7 @@
                     <a sec:authorize="hasRole('ROLE_ADMIN')" th:href="@{/admin/displayProducts}">Settings</a>
                 </div>
 
-                <div class="row header-shopcart">
+                <div id="sp" class="row header-shopcart">
                     <a th:href="@{/shop/cart}">
                         <span>Cart</span>
                         <img class="img-shop" th:src="@{/images/shop.png}"></a>
@@ -49,7 +49,7 @@
 </header>
 
 <section id="nav-section" th:fragment="section">
-    <div class="container nav-section">
+    <div id="na" class="container nav-section">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -87,8 +87,8 @@
     </div>
 </section>
 
-<footer class="footer-container" th:fragment="footer">
-    <div class="container">
+<footer id="footer" class="footer-container" th:fragment="footer">
+    <div id="ft" class="container">
         <div class="row footer-text">
             <p class="col-md-4"><a th:href="@{/support}">Support</a></p>
             <p class="col-md-3"><a th:href="@{/terms}">Terms</a></p>
@@ -97,10 +97,58 @@
     </div>
 </footer>
 
+
+<section id="script" th:fragment="script">
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
+    <script>
+
+        var width = $(window).width();
+
+        $(window).on('resize', function(){
+            if($(this).width() != width){
+               changeParametrs();
+            }
+        });
+
+        $( document ).ready(function() {
+            changeParametrs();
+        });
+
+
+        function changeParametrs(){
+            if ( $(window).width() < 1000 || window.windowState === 3) {
+                document.getElementById("main").classList.remove("container");
+                document.getElementById("header").classList.remove("container");
+                document.getElementById("na").classList.remove("container");
+                document.getElementById("ft").classList.remove("container");
+                document.getElementById("sp").style.float = "right !important";
+
+            }
+            else{
+                document.getElementById("main").classList.add("container");
+                document.getElementById("header").classList.add("container");
+                document.getElementById("na").classList.add("container");
+                document.getElementById("ft").classList.add("container");
+
+            }
+
+            if($(window).width() < 746){
+                document.getElementById("sr").style.paddingRight = "1000px";
+                document.getElementById("sp").style.marginRight= "40px";
+            }
+            else{
+                document.getElementById("sr").style.paddingRight = "0px";
+                document.getElementById("sp").style.marginRight= "0px";
+            }
+        }
+
+    </script>
+
+</section>
 </body>
 
 </html>

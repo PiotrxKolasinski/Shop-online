@@ -2,6 +2,7 @@ body {
     background-color: lightgray;
     font-family: 'Raleway', 'sans-serif';
     overflow-x: hidden;
+    height: 100%;
 }
 
 .header-container {
@@ -84,7 +85,8 @@ body {
 }
 
 .footer-container {
-    background-color: black;
+    background-color: #222;
+    padding: 10px;
 }
 
 .footer-text {
@@ -96,7 +98,7 @@ body {
     color: white;
     text-decoration: none;
     margin-right: 20px;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 10px;
 }
 
@@ -112,6 +114,10 @@ body {
     margin-left: 5px;
     margin-right: 5px;
 }
+.main-section{
+    height: 90vh;
+}
+
 
 @media screen and (max-width: 767.5px) {
     .header-center {
@@ -129,7 +135,6 @@ body {
     }
     .header-shopcart {
         margin-top: 30px;
-        float: left;
         margin-left: 30%;
         margin-bottom: 20px;
     }
@@ -155,12 +160,14 @@ body {
         min-height: 200px;
     }
 
+
 }
 
 
 @media screen and (max-width:767.5px) and (min-width: 580px) {
-    .header-search-text {
-        padding-right: 320px;
+
+    .main-section{
+        height: 0;
     }
 }
 
@@ -169,12 +176,12 @@ body {
         font-size: 13px;
     }
     .header-shopcart {
-        float: left;
         margin-left: 5px;
         margin-bottom: 20px;
         margin-top: 10px;
         width: 100px;
     }
+
     .header-center {
         margin: 0 auto;
         margin-top: 40px;
@@ -205,6 +212,10 @@ body {
     .account-section-right p {
         font-size: 14px;
     }
+
+    #sp{
+        float: right;
+    }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 992px) {
@@ -212,3 +223,4 @@ body {
         margin-left: 40px;
     }
 }
+

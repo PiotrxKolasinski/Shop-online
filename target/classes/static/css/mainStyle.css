@@ -3,9 +3,15 @@
     border-top: 1px solid #000;
 }
 
-.main-section img {
+.main-section-home{
+    background-color: white;
+    border-top: 1px solid #000;
+    min-height: 600px;
+    padding-bottom: 200px;
+}
+
+.main-section-img {
     width: 100%;
-    margin-bottom: 10px;
 }
 
 .title-section h1 {
@@ -98,7 +104,7 @@
 
 .product-section-margin {
     margin-top: 100px;
-    min-height: 600px;
+    min-height: 810px;
 }
 
 .title-product-section {
@@ -328,6 +334,5 @@
     margin-top: 10px;
     width: 100%;
 }
-
 
 

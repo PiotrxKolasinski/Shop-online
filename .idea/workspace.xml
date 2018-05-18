@@ -1,7 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944a3c44-d8b2-4239-b44a-9f52fe2b19b6" name="Default" comment="" />
+    <list default="true" id="944a3c44-d8b2-4239-b44a-9f52fe2b19b6" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/account/address.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/account/address.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/account/details.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/account/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/account/general.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/account/general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/cart/detailsBeforeOrder.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/cart/detailsBeforeOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/contact.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/layout/default.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/product/details.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/product/products.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/settings/details.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/settings/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/settings/orders.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/settings/orders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/support.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/templates/terms.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/terms.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/account/address.html" afterPath="$PROJECT_DIR$/target/classes/templates/account/address.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/account/details.html" afterPath="$PROJECT_DIR$/target/classes/templates/account/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/account/general.html" afterPath="$PROJECT_DIR$/target/classes/templates/account/general.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/account/yourOrders.html" afterPath="$PROJECT_DIR$/target/classes/templates/account/yourOrders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" afterPath="$PROJECT_DIR$/target/classes/templates/cart/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/cart/detailsBeforeOrder.html" afterPath="$PROJECT_DIR$/target/classes/templates/cart/detailsBeforeOrder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/contact.html" afterPath="$PROJECT_DIR$/target/classes/templates/contact.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/home.html" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/layout/default.html" afterPath="$PROJECT_DIR$/target/classes/templates/layout/default.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/login.html" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/product/details.html" afterPath="$PROJECT_DIR$/target/classes/templates/product/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/product/products.html" afterPath="$PROJECT_DIR$/target/classes/templates/product/products.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/registration.html" afterPath="$PROJECT_DIR$/target/classes/templates/registration.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/settings/details.html" afterPath="$PROJECT_DIR$/target/classes/templates/settings/details.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/settings/displayProducts.html" afterPath="$PROJECT_DIR$/target/classes/templates/settings/displayProducts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/settings/orders.html" afterPath="$PROJECT_DIR$/target/classes/templates/settings/orders.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/settings/showProduct.html" afterPath="$PROJECT_DIR$/target/classes/templates/settings/showProduct.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/support.html" afterPath="$PROJECT_DIR$/target/classes/templates/support.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/templates/terms.html" afterPath="$PROJECT_DIR$/target/classes/templates/terms.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,7 +54,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="default.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/default.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,6 +95,9 @@
       <find>error</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -50,28 +106,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/ShopCart.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/products/ProductService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/shopcart/ShopCartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/products/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/products/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/settings/showProducts.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/products/ProductDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/CategoriesController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/format/PasswordFormat.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/support.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/shopcart/CartDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/shopcart/CartService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/shopcart/CartDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/shopcart/CartServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/product/details.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Cart.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/default.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/order/OrderDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/order/OrderService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/order/OrderServiceImpl.java" />
@@ -79,28 +123,40 @@
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/service/cart/CartServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/dao/order/OrderDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/ProductController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/product/products.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/AddressHistoryFromOrders.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/delivery.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/account/details.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/details.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/DeliveryAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/orders.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/InformationController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/SecurityController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/CartController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/account/address.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Address.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/onlineshop/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/account/address.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/account/details.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/account/general.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/cart/cart.html" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/cart/detailsBeforeOrder.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/product/details.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/product/products.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/details.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/contact.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/registration.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/support.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/terms.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/settings/orders.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/home.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/layout/default.html" />
       </list>
     </option>
   </component>
@@ -120,8 +176,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1680" />
-    <option name="height" value="1040" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -140,77 +196,57 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -218,16 +254,16 @@
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -235,8 +271,8 @@
               <item name="account" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -244,8 +280,8 @@
               <item name="cart" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -253,8 +289,8 @@
               <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -262,8 +298,8 @@
               <item name="product" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="onlineshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="onlineshop" type="462c0819:PsiDirectoryNode" />
+              <item name="Shop-online" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Shop-online" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
@@ -274,6 +310,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -294,13 +332,6 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\product" />
-      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\account" />
-      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\cart" />
-      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\settings" />
-      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.onlineshop" />
       <recent name="" />
@@ -309,6 +340,13 @@
       <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\settings" />
       <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\account" />
       <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\product" />
+      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\account" />
+      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\cart" />
+      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources\templates\settings" />
+      <recent name="C:\work\Intelij projekty\onlineshop\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -457,26 +495,29 @@
       <workItem from="1521837751200" duration="6931000" />
       <workItem from="1521882931563" duration="7164000" />
       <workItem from="1521895419181" duration="670000" />
+      <workItem from="1526640104428" duration="4353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="371886000" />
+    <option name="totallyTimeSpent" value="376239000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27687296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27687296" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33116177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21162046" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -492,7 +533,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26275787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -541,56 +581,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/service/customer/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" column="34" lean-forward="false" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/service/customer/CustomerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/service/products/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="61" column="52" lean-forward="false" selection-start-line="61" selection-start-column="52" selection-end-line="61" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/OnlineshopApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="36" lean-forward="true" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-314">
-          <caret line="57" column="80" lean-forward="false" selection-start-line="57" selection-start-column="80" selection-end-line="57" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="50" column="21" lean-forward="false" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/default.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="86" lean-forward="false" selection-start-line="36" selection-start-column="86" selection-end-line="36" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/dao/order/OrderDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -619,13 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/service/cart/CartServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -637,20 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/products.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="69" column="0" lean-forward="true" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/general.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -676,27 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="99" column="71" lean-forward="false" selection-start-line="99" selection-start-column="71" selection-end-line="99" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="38" lean-forward="false" selection-start-line="60" selection-start-column="38" selection-end-line="60" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="63" column="38" lean-forward="false" selection-start-line="63" selection-start-column="38" selection-end-line="63" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/entity/DeliveryAddress.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="739">
@@ -704,38 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="119" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/address.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="75" column="97" lean-forward="false" selection-start-line="75" selection-start-column="97" selection-end-line="75" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/details.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="119" column="32" lean-forward="false" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/onlineshop/entity/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
           <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="39" lean-forward="false" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -750,41 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="86" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3324">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2010">
-          <caret line="193" column="1" lean-forward="true" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart/detailsBeforeOrder.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -892,6 +777,218 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-336">
           <caret line="35" column="66" lean-forward="false" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="8" lean-forward="false" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/address.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="131" column="10" lean-forward="false" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="145" column="10" lean-forward="false" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/general.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="104" column="10" lean-forward="false" selection-start-line="104" selection-start-column="10" selection-end-line="104" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/account/yourOrders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="109" column="10" lean-forward="false" selection-start-line="109" selection-start-column="10" selection-end-line="109" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="98" column="10" lean-forward="false" selection-start-line="98" selection-start-column="10" selection-end-line="98" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/cart/detailsBeforeOrder.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="172" column="10" lean-forward="false" selection-start-line="172" selection-start-column="10" selection-end-line="172" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="97" column="10" lean-forward="false" selection-start-line="97" selection-start-column="10" selection-end-line="97" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="146" column="10" lean-forward="false" selection-start-line="146" selection-start-column="10" selection-end-line="146" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/showProduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="125" column="10" lean-forward="false" selection-start-line="125" selection-start-column="10" selection-end-line="125" selection-end-column="10" />
+          <folding>
+            <marker date="1524632761844" expanded="true" signature="1094:6459" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1122:1297" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1158:1282" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1202:1263" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1324:6448" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1360:2003" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1413:1984" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1472:1961" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1526:1933" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1679:1760" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="1823:1902" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2039:6432" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2092:6413" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2151:6390" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2227:6363" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2384:6332" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2434:6049" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2724:2836" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="2935:3063" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="3155:3497" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="3608:3748" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="3845:3950" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="4041:4385" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="4489:4622" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="4708:5021" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="5127:5262" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="5351:5668" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="5771:5903" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="6152:6297" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="6518:6529" ph="..." />
+            <marker date="1524632761844" expanded="true" signature="6579:6591" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="88" column="10" lean-forward="false" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
+          <folding>
+            <marker date="1524632473066" expanded="true" signature="3201:3213" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9">
+          <caret line="61" column="1" lean-forward="true" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/settings/displayProducts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="127" column="10" lean-forward="false" selection-start-line="127" selection-start-column="10" selection-end-line="127" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="41" column="34" lean-forward="true" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="82" column="10" lean-forward="false" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/support.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="711">
+          <caret line="77" column="10" lean-forward="false" selection-start-line="77" selection-start-column="10" selection-end-line="77" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/terms.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="87" column="0" lean-forward="false" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/product/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="35" column="54" lean-forward="false" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/mainStyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <marker date="1526645124511" expanded="true" signature="14:76" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="28" column="24" lean-forward="false" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/layout/default.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="120" column="0" lean-forward="true" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
