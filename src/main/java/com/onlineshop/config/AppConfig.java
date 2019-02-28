@@ -15,12 +15,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Properties;
 
-
 @Configuration
 @PropertySource("classpath:hibernate.properties")
 public class AppConfig implements WebMvcConfigurer{
-
-    private Environment env;
+    private final Environment env;
 
     @Autowired
     public AppConfig(Environment env) {
@@ -38,37 +36,26 @@ public class AppConfig implements WebMvcConfigurer{
     }
 
     private Properties getHibernateProperties() {
-
         Properties props = new Properties();
-
         props.setProperty("hibernate.dialect", env.getProperty("hibernate.dialect"));
         props.setProperty("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
-
         return props;
     }
 
     @Bean
     public LocalSessionFactoryBean sessionFactory(){
-
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
-
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setPackagesToScan(env.getProperty("hibernate.packagesToScan"));
         sessionFactory.setHibernateProperties(getHibernateProperties());
-
         return sessionFactory;
     }
 
     @Bean
     @Autowired
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
-
         HibernateTransactionManager txManager = new HibernateTransactionManager();
         txManager.setSessionFactory(sessionFactory);
-
         return txManager;
     }
-
-
-
 }

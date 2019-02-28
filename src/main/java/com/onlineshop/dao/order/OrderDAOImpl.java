@@ -14,8 +14,7 @@ import java.util.Set;
 
 @Repository
 public class OrderDAOImpl implements OrderDAO {
-
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
     @Autowired
     public OrderDAOImpl(SessionFactory sessionFactory) {
@@ -24,27 +23,18 @@ public class OrderDAOImpl implements OrderDAO {
 
     @Override
     public void saveOrder(Order order) {
-
         Session session = sessionFactory.getCurrentSession();
-
         session.saveOrUpdate(order);
     }
 
     @Override
     public Set<Order> getAllUnfinishedOrders() {
-
         String sql = "from Cart where status!=:status1 and status!=:status2";
-
         Session session = sessionFactory.getCurrentSession();
-
         Query<Cart> query = session.createQuery(sql, Cart.class);
-
         query.setParameter("status1", "product in cart");
-
         query.setParameter("status2", "done");
-
         List<Cart> carts = query.getResultList();
-
         Set<Order> orders = new LinkedHashSet<>();
 
         for(Cart temp : carts){
@@ -56,11 +46,7 @@ public class OrderDAOImpl implements OrderDAO {
 
     @Override
     public Order getOrder(int id) {
-
         Session session = sessionFactory.getCurrentSession();
-
-        Order order = session.get(Order.class, id);
-
-        return order;
+        return session.get(Order.class, id);
     }
 }

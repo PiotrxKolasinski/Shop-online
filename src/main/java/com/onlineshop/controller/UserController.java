@@ -26,12 +26,9 @@ import java.util.Set;
 @Controller
 @RequestMapping(value = "/user")
 public class UserController {
-
-    private CustomerService customerService;
-
-    private OrderService orderService;
-
-    private CartService cartService;
+    private final CustomerService customerService;
+    private final OrderService orderService;
+    private final CartService cartService;
 
     @Autowired
     public UserController(CustomerService customerService, OrderService orderService, CartService cartService) {
@@ -47,18 +44,14 @@ public class UserController {
 
     @RequestMapping(value = "/general")
     public String showAccount(Model model) {
-
         Customer customer = customerService.getCurrentCustomer();
-
         model.addAttribute("customer", customer);
         model.addAttribute("passwordFormat", new PasswordFormat());
-
         return "account/general";
     }
 
     @RequestMapping(value = "/yourOrders")
     public String showYourOrders(Model model) {
-
         List<Cart> carts = cartService.findCartByCustomerIdAndStatus(customerService.getCurrentCustomer().getId());
         Set<Order> orders = new LinkedHashSet<>();
 
@@ -67,23 +60,18 @@ public class UserController {
         }
 
         model.addAttribute("orders", orders);
-
         return "account/yourOrders";
     }
 
     @RequestMapping(value = "/address")
     public String showAddress(Model model) {
-
         Customer customer = customerService.getCurrentCustomer();
-
         model.addAttribute("customer", customer);
-
         return "account/address";
     }
 
     @RequestMapping(value = "/updateAddress")
     public String updateAddress(@ModelAttribute("customer") @Valid Customer customer, BindingResult bindingResult) {
-
         if(bindingResult.hasErrors()){
             return "account/address";
         }
@@ -101,15 +89,12 @@ public class UserController {
         currentCustomer.getAddress().setZipCode(customer.getAddress().getZipCode());
         currentCustomer.getAddress().setFirstname(customer.getAddress().getFirstname());
         currentCustomer.getAddress().setLastname(customer.getAddress().getLastname());
-
         customerService.saveCustomer(currentCustomer);
-
         return "redirect:/user/address";
     }
 
     @RequestMapping(value = "/changePassword")
     public String changePassword(@ModelAttribute("passwordFormat") @Valid PasswordFormat passwordFormat, BindingResult bindingResult, Model model) {
-
         Customer customer = customerService.getCurrentCustomer();
 
         if (bindingResult.hasErrors()) {
@@ -128,20 +113,15 @@ public class UserController {
         encodedPassword = "{bcrypt}" + encodedPassword;
 
         customer.setPassword(encodedPassword);
-
         customerService.saveCustomer(customer);
-
         return "redirect:/user/general?success";
     }
 
     @RequestMapping(value = "/details")
     public String showDetails(@RequestParam("id") int id, Model model) {
-
         Order order = orderService.getOrder(id);
-
         model.addAttribute("title", "Settings");
         model.addAttribute("order", order);
-
         return "account/details";
     }
 }

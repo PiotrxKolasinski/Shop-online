@@ -15,8 +15,7 @@ import java.util.List;
 
 @Repository
 public class CustomerDAOImpl implements CustomerDAO{
-
-    private SessionFactory sessionFactory;
+    private final SessionFactory sessionFactory;
 
     @Autowired
     public CustomerDAOImpl(SessionFactory sessionFactory) {
@@ -25,70 +24,45 @@ public class CustomerDAOImpl implements CustomerDAO{
 
     @Override
     public void registerCustomer(Authorities customer) {
-
         Session session = sessionFactory.getCurrentSession();
-
         session.saveOrUpdate(customer);
     }
 
     @Override
     public void saveCustomer(Customer customer) {
         Session session = sessionFactory.getCurrentSession();
-
         session.update(customer);
     }
 
     @Override
     public boolean userExists(String username) {
-
         String sql = "from Customer where username LIKE :username";
-
-        Session session = sessionFactory.getCurrentSession();
-
-        Query<Customer> query = session.createQuery(sql, Customer.class);
-
-        query.setParameter("username", username);
-
-        int size = query.getResultList().size();
-
-        if(size==0) return false;
-        else return true;
+        return isExists(username, sql, "username");
     }
 
     @Override
     public boolean emailExists(String email) {
-
         String sql = "from Customer where email LIKE :email";
+        return isExists(email, sql, "email");
+    }
 
+    private boolean isExists(String email, String sql, String email2) {
         Session session = sessionFactory.getCurrentSession();
-
         Query<Customer> query = session.createQuery(sql, Customer.class);
-
-        query.setParameter("email", email);
-
+        query.setParameter(email2, email);
         int size = query.getResultList().size();
-
-        if(size==0) return false;
-        else return true;
+        return size != 0;
     }
 
     @Override
     public Customer getCurrentCustomer() {
-
         String sql = "from Customer where username=:username";
-
         Session session = sessionFactory.getCurrentSession();
-
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-
         String username = auth.getName();
-
         Query<Customer> query = session.createQuery(sql, Customer.class);
-
         query.setParameter("username", username);
-
         List<Customer> customer = query.getResultList();
-
         return customer.get(0);
     }
 

@@ -19,7 +19,7 @@ public interface ProductService {
 
      void saveProduct(Product product);
 
-     void changeView(int id);
+     void updateView(int id);
 
      boolean nameExists(String name);
 

@@ -23,12 +23,9 @@ import java.util.List;
 @Controller
 @RequestMapping(value = "shop")
 public class CartController {
-
-    private CustomerService customerService;
-
-    private CartService cartService;
-
-    private OrderService orderService;
+    private final CustomerService customerService;
+    private final CartService cartService;
+    private final OrderService orderService;
 
     @Autowired
     public CartController(CustomerService customerService, CartService cartService, OrderService orderService) {
@@ -39,9 +36,7 @@ public class CartController {
 
     @RequestMapping(value = "/cart")
     public String showCart(Model model) {
-
         List<Cart> carts = cartService.getCartList();
-
         float Price = calculatePrice(carts);
 
         if (carts.size() == 0) {
@@ -57,7 +52,6 @@ public class CartController {
 
     @RequestMapping(value = "/addProductToCart")
     public String addProductToShopCart(@RequestParam("productId") int id, @RequestParam(value = "quantity") int quantity) {
-
         if (quantity == 1) {
             cartService.addProductToCart(1, id);
         } else {
@@ -69,15 +63,12 @@ public class CartController {
 
     @RequestMapping(value = "/deleteProductFromCart")
     public String deleteProductFromShopCart(@RequestParam("id") int id) {
-
         cartService.deleteProductFromCart(id);
-
         return "redirect:/shop/cart";
     }
 
     @RequestMapping(value = "/detailsBeforeOrder")
     public String showDetailsBeforeOrder(@RequestParam("quantity") int[] quantity, Model model) {
-
         List<Cart> carts = cartService.getCartList();
 
         for (int i = 0; i < carts.size(); i++) {
@@ -88,47 +79,27 @@ public class CartController {
         }
 
         Customer customer = customerService.getCurrentCustomer();
-        LocalDate orderDate = LocalDate.now();
 
-        float price = calculatePrice(carts);
-
-        model.addAttribute("carts", carts);
-        model.addAttribute("price", price);
-        model.addAttribute("customer", customer);
-        model.addAttribute("select", "beforeOrder");
-        model.addAttribute("orderDate", orderDate);
-
-        return "cart/detailsBeforeOrder";
+        return prepareModelAttributeAndGetPageDetailsBeforeOrder(model, carts, customer);
     }
 
     @RequestMapping(value = "/order")
-    public String showOrder(@ModelAttribute("customer") @Valid Customer customer, BindingResult bindingResult,
-                            @RequestParam("message") String message, @RequestParam("delivery") String delivery,
-                            Model model) {
-
+    public String showOrder(@ModelAttribute("customer") @Valid Customer customer,
+                            BindingResult bindingResult,
+                            @RequestParam("message") String message,
+                            @RequestParam("delivery") String delivery,
+                            Model model
+    ) {
         if (bindingResult.hasErrors()) {
             List<Cart> carts = cartService.getCartList();
-
-            LocalDate orderDate = LocalDate.now();
-
-            float price = calculatePrice(carts);
-
-            model.addAttribute("carts", carts);
-            model.addAttribute("price", price);
-            model.addAttribute("select", "beforeOrder");
-            model.addAttribute("orderDate", orderDate);
-
-            return "cart/detailsBeforeOrder";
+            return prepareModelAttributeAndGetPageDetailsBeforeOrder(model, carts, customer);
         }
 
             List<Cart> carts = cartService.getCartList();
-
             Customer currentCustomer = customerService.getCurrentCustomer();
 
             LocalDateTime orderDate = LocalDateTime.now();
-
             float deliveryPrice = Float.parseFloat(delivery.split("-")[1].trim());
-
             float price = calculatePrice(carts)+deliveryPrice;
 
             DeliveryAddress deliveryAddress = new DeliveryAddress(
@@ -153,7 +124,6 @@ public class CartController {
             order.setOrderedProducts(carts);
             orderService.saveOrder(order);
 
-
             for (Cart temp : carts) {
                 temp.setStatus("ordered");
                 temp.setOrder(order);
@@ -161,16 +131,25 @@ public class CartController {
             }
 
         model.addAttribute("select", "afterOrder");
-
         return "cart/detailsBeforeOrder";
     }
 
-    public float calculatePrice(List<Cart> carts) {
+    private String prepareModelAttributeAndGetPageDetailsBeforeOrder(Model model, List<Cart> carts, Customer customer) {
+        LocalDate orderDate = LocalDate.now();
+        float price = calculatePrice(carts);
+        model.addAttribute("carts", carts);
+        model.addAttribute("price", price);
+        model.addAttribute("customer", customer);
+        model.addAttribute("select", "beforeOrder");
+        model.addAttribute("orderDate", orderDate);
+        return "cart/detailsBeforeOrder";
+    }
+
+    private float calculatePrice(List<Cart> carts) {
         float price = 0;
-        for (int i = 0; i < carts.size(); i++) {
-            price = price + (carts.get(i).getQuantity() * carts.get(i).getProduct().getPrice());
+        for (Cart cart : carts) {
+            price = price + (cart.getQuantity() * cart.getProduct().getPrice());
         }
         return price;
     }
-
 }

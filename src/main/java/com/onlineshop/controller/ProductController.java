@@ -15,10 +15,9 @@ import java.util.List;
 
 @Controller
 public class ProductController {
-
     private final int NUMBER_OF_PRODUCTS_ON_PAGE = 8;
 
-    private ProductService productService;
+    private final ProductService productService;
 
     @Autowired
     public ProductController(ProductService productService) {
@@ -27,7 +26,6 @@ public class ProductController {
 
     @RequestMapping(value = "/{product}")
     public String showProduct(@PathVariable("product") String category, @RequestParam("page") int page, Model model) {
-
         List<Product> products = productService.getProductsBetweenValue(
                 page * NUMBER_OF_PRODUCTS_ON_PAGE - NUMBER_OF_PRODUCTS_ON_PAGE, NUMBER_OF_PRODUCTS_ON_PAGE, category);
 
@@ -40,25 +38,20 @@ public class ProductController {
         model.addAttribute("title", "Category: " + category);
         model.addAttribute("title2", category);
         model.addAttribute("numberOfPages", pages);
-
         return "product/products";
     }
 
     @RequestMapping(value = "/details")
     public String showDetails(@RequestParam("productId") int id, Model model) {
-        
         Product product = productService.getProduct(id);
-
         model.addAttribute("product", product);
         model.addAttribute("shortDescription", product.getShortDescription().split("\n"));
         model.addAttribute("title", "Product details");
-        
         return "product/details";
     }
 
     @RequestMapping(value = "/search")
     public String search(@RequestParam("page") int page, @RequestParam("searchResult") String searchResult, Model model) {
-
         searchResult = searchResult.trim();
 
         List<Product> products = productService.searchProducts(searchResult, page);
@@ -80,11 +73,10 @@ public class ProductController {
         model.addAttribute("title2", "search");
         model.addAttribute("searchResult", searchResult);
         model.addAttribute("numberOfPages", pages);
-
         return "product/products";
     }
 
-    public List<String[]> setShortDescriptionToArray(List<Product> products) {
+    private List<String[]> setShortDescriptionToArray(List<Product> products) {
         List<String[]> shortDescription = new ArrayList<>();
 
         for (Product in : products) {
@@ -95,9 +87,7 @@ public class ProductController {
         return shortDescription;
     }
 
-
-    public List<String> setPagesToView(int lastPage, int page) {
-
+    private List<String> setPagesToView(int lastPage, int page) {
         List<String> pages = new ArrayList<>();
 
         if (lastPage <= 5) {

@@ -18,6 +18,12 @@ import javax.sql.DataSource;
 @EnableWebSecurity
 @ComponentScan(basePackages="com.onlineshop.config")
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    private final DataSource dataSource;
+
+    @Autowired
+    public SecurityConfig(@Qualifier(value = "dataSource") DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -33,13 +39,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .logout()
                 .permitAll();
-
     }
-
-
-    @Autowired
-    @Qualifier(value = "dataSource")
-    private DataSource dataSource;
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
@@ -55,6 +55,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         jdbcUserDetailsManager.setDataSource(dataSource);
         return jdbcUserDetailsManager;
     }
-
-
 }

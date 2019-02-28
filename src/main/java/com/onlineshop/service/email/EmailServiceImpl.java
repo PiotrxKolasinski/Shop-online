@@ -1,6 +1,7 @@
 package com.onlineshop.service.email;
 
-import com.onlineshop.service.email.EmailService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
@@ -9,11 +10,11 @@ import org.springframework.stereotype.Service;
 import javax.mail.MessagingException;
 import javax.mail.internet.MimeMessage;
 
-
 @Service
 public class EmailServiceImpl implements EmailService {
+    private final static Logger logger = LoggerFactory.getLogger(EmailServiceImpl.class.getName());
 
-    private JavaMailSender javaMailSender;
+    private final JavaMailSender javaMailSender;
 
     @Autowired
     public EmailServiceImpl(JavaMailSender javaMailSender) {
@@ -29,7 +30,7 @@ public class EmailServiceImpl implements EmailService {
             helper.setSubject(title);
             helper.setText(content);
             javaMailSender.send(mail);
-
+            logger.info("[EmailService] send email to: " + to);
         } catch (MessagingException e) {
             e.printStackTrace();
         }

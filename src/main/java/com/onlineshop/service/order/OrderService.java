@@ -14,7 +14,7 @@ public interface OrderService {
 
     Order getOrder(int id);
 
-    void setStatus(String status, int id);
+    void updateStatus(String status, int id);
 
-    void setPaid(int id);
+    void togglePaid(int id);
 }

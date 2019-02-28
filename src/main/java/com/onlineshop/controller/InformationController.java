@@ -15,15 +15,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import javax.validation.Valid;
 import java.util.logging.Logger;
 
-
 @Controller
 public class InformationController {
-
-    private EmailService emailService;
-
-    private Logger logger = Logger.getLogger(getClass().getName());
-
-    private Environment env;
+    private final EmailService emailService;
+    private final Environment env;
 
     @Autowired
     public InformationController(EmailService emailService, Environment env) {
@@ -36,8 +31,8 @@ public class InformationController {
         return "contact";
     }
 
-    @RequestMapping(value="/terms")
-    public String showTerms(){
+    @RequestMapping(value = "/terms")
+    public String showTerms() {
         return "terms";
     }
 
@@ -62,28 +57,15 @@ public class InformationController {
 
     @RequestMapping(value = "/emailSent", method = RequestMethod.POST)
     public String send(@ModelAttribute @Valid SupportFormat supportFormat, BindingResult bindingResult) {
-
-        // Email z ktorego ma byc wyslana wiadomosc nelezy ustawic w pliku application.properties
-
-        if(bindingResult.hasErrors()){
+        if (bindingResult.hasErrors()) {
             return "support";
         }
 
-        try {
-            // Email z wiadomoscia do dzialu wsparcia
-            emailService.sendEmail(env.getProperty("spring.mail.username"), supportFormat.getSubject(), "Email from "
-                    + supportFormat.getEmail() + "\n\nMessage:\n\n" + supportFormat.getMessage());
+        emailService.sendEmail(env.getProperty("spring.mail.username"), supportFormat.getSubject(), "Email from "
+                + supportFormat.getEmail() + "\n\nMessage:\n\n" + supportFormat.getMessage());
 
-            // Email zwrotny do adresata o przyjeciu do realizacji zgloszenia
-            emailService.sendEmail(supportFormat.getEmail(), supportFormat.getSubject(), "Your application has been accepted!");
-        }
-        catch(Exception e){
-            logger.info("\nUstaw wartosci username i password w pliku application.properties" +
-                    "\nGdyby dalej email nie zostal wyslany to nalezy zmienic uprawnienia na swoim mailu");
-        }
+        emailService.sendEmail(supportFormat.getEmail(), supportFormat.getSubject(), "Your application has been accepted!");
 
         return "redirect:/support";
     }
-
-
 }

@@ -2,6 +2,8 @@ package com.onlineshop.service.products;
 
 import com.onlineshop.dao.products.ProductDAO;
 import com.onlineshop.entity.Product;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -10,8 +12,9 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
+    private final static Logger logger = LoggerFactory.getLogger(ProductServiceImpl.class.getName());
 
-    private ProductDAO productDAO;
+    private final ProductDAO productDAO;
 
     @Autowired
     public ProductServiceImpl(ProductDAO computersDAO) {
@@ -53,18 +56,22 @@ public class ProductServiceImpl implements ProductService {
     @Transactional
     public void saveProduct(Product product) {
         productDAO.saveProduct(product);
+        logger.info("[ProductService] save product with id: " + product.getId());
     }
 
     @Override
     @Transactional
-    public void changeView(int id) {
+    public void updateView(int id) {
+        Product existingProduct = productDAO.getProduct(id);
 
-        Product product = productDAO.getProduct(id);
+        if(existingProduct.getView().equals("no")) {
+            existingProduct.setView("yes");
+        } else {
+            existingProduct.setView("no");
+        }
 
-        if(product.getView().equals("no")) product.setView("yes");
-        else product.setView("no");
-
-        productDAO.saveProduct(product);
+        productDAO.saveProduct(existingProduct);
+        logger.info("[ProductService] update product view with id: " + existingProduct.getId());
     }
 
     @Override
